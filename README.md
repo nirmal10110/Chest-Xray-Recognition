@@ -9,9 +9,13 @@ This end-to-end project consists of a web application which uses Deep Learning a
 
 Here are some screenshots of the demo application :
 
-![](images/pneu1.PNG)
+![](images/i.PNG)
 
-![](images/pneu2.PNG)
+![](images/i2.PNG)
+
+![](images/i3.PNG)
+
+![](images/i4.PNG)
 
 ## Built with
 
@@ -25,11 +29,8 @@ Here are some screenshots of the demo application :
 ### Step one : Collecting the data
 
 * Finding right data is crucial to success of any good algorithm. For this reason I spend around a day researching finding all available datasets on kaggle and google. I decided to go with the [NIH Dataset](https://www.kaggle.com/nih-chest-xrays). I made a subset of that dataset containing Pneumonia cases only for my project.
-* The subset contained very few samples (5216) and there was high imbalance between the two classes (normal and pneumonia). Following graph shows the imbalance between the classes :
 
-![](images/eda.png)
-
-* For this reason *Data Augmentation* was very helpful in this case. Data Augmentation is a technique where we produce images of undersampled classes to balance the overall distribution. I used *imgaug* library for this purpose.
+*To remove data imabalance *Data Augmentation* was very helpful in this case. Data Augmentation is a technique where we produce images of undersampled classes to balance the overall distribution. I used *imgaug* library for this purpose.
 
 
 ### Step two : Modelling the Neural Networks
@@ -56,21 +57,13 @@ Here are some screenshots of the demo application :
 
 ### Step three : Training the models
 
-* The initial model I designed had an ETA of *100* hours on my laptop! I had to find another way to solve this problem. Thankfully [Google Colab](https://colab.research.google.com/) provides some free resources for researchers, students and hobbyists.
-* The model had an ETA of 10 hours with the Google's K80 GPU. This was doable but still if I needed to change parameters or the architecture it would be a painful task.
-* Finally I figured out how to use Google's experimental [TPU](https://cloud.google.com/tpu/) aka Tensor Processing Unit to train my model. This cut down my training time to around 2 hours! This is a lightning fast tech by Google and I recommend anyone to try it. It involves a lot of over-head though as we need to convert Keras model to a model usable by TPU and then convert it back to Tensorflow/Keras model which can be used to make inferences in Flask.
+*I figured out how to use Google's experimental [TPU](https://cloud.google.com/tpu/) aka Tensor Processing Unit to train my model. This cut down my training time to around 2 hours! This is a lightning fast tech by Google and I recommend anyone to try it. It involves a lot of over-head though as we need to convert Keras model to a model usable by TPU and then convert it back to Tensorflow/Keras model which can be used to make inferences in Flask.
 
-### Step four : Deployment
+### Step four : Building Webpage
 
 * This honestly took a major chunk of my time (around 3 days) to execute since I had no knowledge of Javascript, HTML, RESTful APIs and web frameworks. But it was worth investing time in as I now can create Proof Of Concepts for my future projects and showcase them to my friends and enthusiasts.
 * I used Flask framework primarily because it is Python-based, which I already am fluent in, and extremely easy to learn and deploy. There are tons of resources available to use Flask and I've attached links to the ones which helped me the most.
 
-## Conclusion
-
-As a Machine Learning engineer, it is my responsibility to help as many people as I can and this project was the proof of concept for that. I made a Minimum Viable Product, but it can certainly be improved upon. Features that can be added are :
-* Use Mask-RCNN to find the area of lung affected by the disease.
-* Research and train more accurate algorithms.
-I hope you enjoyed reading this report, by no means I am an expert in this domain, if I wrongly stated anything feel free to message me and correct me. Below sections contain the resources I used and details on how to run the app on your own machine.
 
 ## Useful resources
 
