@@ -9,13 +9,13 @@ This end-to-end project consists of a web application which uses Deep Learning a
 
 Here are some screenshots of the demo application :
 
-![](images/i.PNG)
+![](images/i.png)
 
-![](images/i2.PNG)
+![](images/i2.png)
 
-![](images/i3.PNG)
+![](images/i3.png)
 
-![](images/i4.PNG)
+![](images/i4.png)
 
 ## Built with
 
