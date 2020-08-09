@@ -46,10 +46,6 @@ Here are some screenshots of the demo application :
 | :---: | :---: | :---: | :---: |
 | Mobilenet | 20 | 0.75 | 0.71 |
 | Mobilenet | 30 | 0.99 | 0.79 |
-| VGG16 | 5 | 0.95 | 0.81 |
-| VGG16 | 20 | 0.99 | 0.93 |
-
-* Note that VGG16 is a considerably large network than Mobilenet. The VGG16 model sized around 500 mb where as the Mobilenet was only around 30 mb. VGG16 is more accurate but only deployable on server based applications, where as Mobilenet is a little less accurate and can be even deplyed on mobile devices.
 
 * A graph of accuracy for training vs validation for the Mobile net -
 
