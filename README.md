@@ -9,13 +9,13 @@ This end-to-end project consists of a web application which uses Deep Learning a
 
 Here are some screenshots of the demo application :
 
-![](images/i.png)
+![](images/i.PNG)
 
-![](images/i2.png)
+![](images/i2.PNG)
 
-![](images/i3.png)
+![](images/i3.PNG)
 
-![](images/i4.png)
+![](images/i4.PNG)
 
 ## Built with
 
@@ -44,8 +44,9 @@ Here are some screenshots of the demo application :
 
 | Model | Number of Epochs | Training Accuracy | Validation Accuracy |
 | :---: | :---: | :---: | :---: |
-| Mobilenet | 20 | 0.75 | 0.71 |
+| Mobilenet | 20 | 0.95 | 0.71 |
 | Mobilenet | 30 | 0.99 | 0.79 |
+
 
 * A graph of accuracy for training vs validation for the Mobile net -
 
