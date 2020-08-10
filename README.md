@@ -9,7 +9,9 @@ This end-to-end project consists of a web application which uses Deep Learning a
 
 Here are some screenshots of the demo application :
 
-![](images/i.png)
+<!-- ![](images/i.png) -->
+
+![](images/i.png) 
 
 ![](images/i2.png)
 
